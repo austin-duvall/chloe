@@ -36,7 +36,6 @@
   background: none;
   border: none;
   cursor: pointer;
-  animation: bounceOnX 1s 2;
 }
 
 #socialDiv main button.flip {
@@ -44,7 +43,6 @@
   left: 110%;
   transform: translate(110%, -50%) rotate(-180deg);
   transition: transform .25s ease-in-out;
-  animation: none;
 }
 
 #socialDiv main ul {
@@ -64,13 +62,4 @@
 
 #socialDiv a, #socialDiv img {
   background: none;
-}
-
-@keyframes bounceOnX {
-  0%, 100% {
-    left: 110%;
-  }
-  50% {
-    left: 120%;
-  }
 }
