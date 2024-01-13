@@ -1,0 +1,62 @@
+.btnLink-m {
+  color: black;
+  background: linear-gradient(45deg, var(--white-color),  var(--accent-color), var(--accent-color), var(--dark-accent));
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  text-decoration: none;
+}
+
+.btnContainer-m {
+  margin: 150px;
+  position: relative;
+  width: fit-content;
+  overflow: hidden;
+}
+
+.border-x-m {
+  stroke: white;
+  stroke-width: 5;
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  transition: left .4s ease-in-out;
+}
+
+.btnContainer-m:hover .btnLink-m {
+  background: linear-gradient(45deg, var(--accent-color), var(--dark-accent), var(--dark-accent));
+  color: var(--white-color);
+}
+
+.btnContainer-m:hover .border-x-m {
+  left: 0;
+  transition: left .5s ease-in-out;
+}
+
+#slideshow {
+  overflow: scroll;
+  background-color: var(--dark-accent);
+}
+
+#slideshow .slides {
+  display: block;
+  width: 1200px;
+  height: auto;
+  list-style-type: none;
+  background-color: var(--dark-accent);
+}
+
+#slideshow .slide {
+  float: left;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--dark-accent);
+}
+
+#slideshow img {
+  width: 350px;
+  background-color: var(--dark-accent);
+}

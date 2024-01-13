@@ -1,0 +1,10 @@
+#quotesDiv main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#quotesDiv main img {
+  width: 80vw;
+  padding: 5%;
+}

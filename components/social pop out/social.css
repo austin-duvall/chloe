@@ -1,0 +1,76 @@
+#socialDiv img {
+  height: 25px;
+}
+
+#socialDiv main {
+  position: absolute;
+  width: 50px;
+  height: 250px;
+  left: -50px;
+  transition: left .25s ease-in-out;
+  background-color: var(--white-color);
+}
+
+#socialDiv main.expanded {
+  left: 0;
+  transition: left .25s ease-in-out;
+}
+
+#socialDiv main p {
+  top: 50%;
+  left: 30%;
+  transform: translate(30%, -50%) rotate(-90deg);
+  position: absolute;
+  display: flex;
+  text-align: center;
+  background: none;
+}
+
+#socialDiv main button {
+  position: absolute;
+  font-size: 2rem;
+  top: 50%;
+  left: 110%;
+  transform: translate(110%, -50%) rotate(0deg);
+  transition: transform .25s ease-in-out 5;
+  background: none;
+  border: none;
+  cursor: pointer;
+  animation: bounceOnX 1s 2;
+}
+
+#socialDiv main button.flip {
+  top: 50%;
+  left: 110%;
+  transform: translate(110%, -50%) rotate(-180deg);
+  transition: transform .25s ease-in-out;
+  animation: none;
+}
+
+#socialDiv main ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style-type: none;
+  background: none;
+}
+
+#socialDiv main li {
+  position: relative;
+  background: none;
+  padding: 15px;
+}
+
+#socialDiv a, #socialDiv img {
+  background: none;
+}
+
+@keyframes bounceOnX {
+  0%, 100% {
+    left: 110%;
+  }
+  50% {
+    left: 120%;
+  }
+}

@@ -1,0 +1,87 @@
+#countdownDiv main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
+}
+
+#countdownDiv main h1 {
+  background-color: transparent;
+}
+
+#countdownDiv main a {
+  background-color: transparent;
+}
+
+#countdownHeader {
+  font-size: 3rem;
+}
+
+#timer {
+  width: 325px;
+  border-radius: 10px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: var(--dark-accent);
+}
+
+#timer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: var(--dark-accent);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#timer ul h1, #timer ul h2 {
+  background-color: var(--dark-accent);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#timer ul h1 {
+  font-size: 2rem;
+}
+
+#timer ul h2 {
+  color: black;
+  stroke-linecap: white;
+}
+
+.btnLink-c {
+  color: black;
+  background: linear-gradient(45deg, var(--white-color),  var(--accent-color), var(--accent-color), var(--dark-accent));
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  text-decoration: none;
+}
+
+.btnContainer-c {
+  margin: 150px;
+  position: relative;
+  width: fit-content;
+  overflow: hidden;
+}
+
+.border-x-c {
+  stroke: white;
+  stroke-width: 5;
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  transition: left .4s ease-in-out;
+}
+
+.btnContainer-c:hover .btnLink-c {
+  background: linear-gradient(45deg, var(--accent-color), var(--dark-accent), var(--dark-accent));
+  color: var(--white-color);
+}
+
+.btnContainer-c:hover .border-x-c {
+  left: 0;
+  transition: left .5s ease-in-out;
+}

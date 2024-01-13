@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chloé</title>
+    <meta name="description" content="Your page description for search engines">
+    <meta name="robots" content="index,follow">
+    <!-- Open Graph Protocol meta tags -->
+    <!--
+    <meta property="og:title" content="Your Open Graph title">
+    <meta property="og:description" content="Your Open Graph description">
+    <meta property="og:image" content="URL to your Open Graph image">
+    <meta property="og:url" content="URL to your page">
+    <meta property="og:type" content="website">
+    -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <script src="./scripts/fadeIn.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./scripts/chloePhotoFetch.js" defer></script>
+    <script src="./scripts/quotesFetch.js" defer></script>
+    <script src="./scripts/countdownFetch.js" defer></script>
+    <script src="./scripts/albumFetch.js" defer></script>
+    <script src="./scripts/merchFetch.js" defer></script>
+    <script src="./scripts/socialFetch.js" defer></script>
+  </head>
+<body>
+
+    <header>
+      <img class="chloeLogo" src="./assets/chloe - logo.png" />
+    </header>
+    <main id="mainMain">
+      <div id="socialDiv"></div>
+      <div id="chloePhotoDiv"></div>
+      <div id="quotesDiv"></div>
+      <div class="fadeIn" id="countdownDiv"></div>
+      <div class="fadeIn" id="albumDiv"></div>
+      <div class="fadeIn" id="merchDiv"></div>
+    </main>
+    <footer>
+      <div class="fadeIn" id="footerSocialDiv">
+        <ul>
+          <li>
+            <a id="tester" href="https://www.instagram.com/" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="instagram logo" >
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="tiktok logo" >
+            </a>
+          </li>
+          <li>
+            <a href="https://www.x.com/" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg" alt="x logo" >
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Facebook_f_logo_%282021%29.svg" alt="facebook logo" >
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="copyrightDiv">
+        <img src="./assets/chloe - logo.png" alt="chloé logo">
+        <p>&copy; 2024 Chloé</p>
+      </div>
+    </footer>
+</body>
+</html>

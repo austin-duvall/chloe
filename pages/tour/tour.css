@@ -1,0 +1,39 @@
+.tour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tour h1:first-child {
+  font-size: 2.5rem;
+  padding: 5%;
+}
+
+.tour .stop {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.tour ul {
+  list-style-type: none;
+}
+
+.tour .stop ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tour .stop ul li:first-child {
+  color: rgb(237, 140, 246);
+  font-size: 1.5rem;
+}
+
+.tour .stop ul li {
+  padding: 1%;
+}
+
+.tour .stop ul li a img {
+  width: 100px;
+}
