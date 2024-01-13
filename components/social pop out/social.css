@@ -19,6 +19,7 @@
 
 #socialDiv main p {
   transform: rotate(-90deg);
+  top: 20%;
   left: 70%;
   position: relative;
   border: 1px solid blue;
