@@ -1,0 +1,49 @@
+@media screen and (min-width: 900px) {
+  #mainMain {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #chloePhotoDiv {
+    width: 50vw;
+  }
+
+  #chloePhotoDiv main img {
+    max-width: 700px;
+  }
+
+  #quotesDiv {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #quotesDiv main img {
+    max-width: 550px;
+  }
+
+  #countdownDiv {
+    width: 100%;
+  }
+
+  #timer {
+    min-width: 80vw;
+  }
+
+  #timer ul li h1 {
+    font-size: 4rem;
+  }
+
+  #timer ul h2 {
+    font-size: 3rem;
+  }
+
+  #albumDiv {
+    width: 100%;
+  }
+
+  #merchDiv {
+    width: 100%;
+  }
+}

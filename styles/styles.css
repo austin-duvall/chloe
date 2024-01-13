@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+
+*, *:before, *:after {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: black;
+  font-family: 'Rubik Bubbles', 'Courier New', Courier, monospace;
+  color: white;
+}
+
+:root {
+  --accent-color: rgb(237, 140, 246);
+  --dark-accent: rgb(90, 35, 95);
+  --white-color: rgb(245, 245, 245);
+  --accent-fade: rgba(237, 140, 246, 0.5)
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.chloeLogo {
+  width: 50vw;
+}
+
+#socialDiv {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+}
+
+#chloePhotoDiv {
+  margin-top: 5%;
+}
+
+
+#albumDiv {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/*---//---*/
+
+#mainMain {
+  display: flex;
+  flex-direction: column;
+}
+
+/*---//---*/
+
+.fadeIn {
+  opacity: 0;
+  transform: translateY(25%); /* Initially positioned below viewport */
+  transition: all 1.5s ease-in-out; /* Transition both opacity and transform */
+}
+
+/*---//---*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#footerSocialDiv {
+  width: 100%;
+}
+
+#footerSocialDiv ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  text-decoration: none;
+  background-color: aliceblue;
+  padding: 5px;
+}
+
+#footerSocialDiv img {
+  height: 25px;
+  background-color: aliceblue;
+  padding: 5px;
+}
+
+#footerSocialDiv a {
+  background-color: aliceblue;
+}
+
+#copyrightDiv {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+#copyrightDiv img {
+  height: 50px;
+}
+
+/*---//---*/

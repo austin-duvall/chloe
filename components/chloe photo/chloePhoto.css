@@ -1,0 +1,8 @@
+#chloePhotoDiv main {
+  display: flex;
+  justify-content: center;
+}
+
+#chloePhotoDiv main img {
+  width: 85vw;
+}
