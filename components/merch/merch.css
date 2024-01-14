@@ -41,11 +41,12 @@
 #slideshow {
   overflow: scroll;
   background-color: var(--dark-accent);
+  scrollbar-color: transparent transparent;
 }
 
 #slideshow .slides {
   display: block;
-  width: 1200px;
+  width: 4000px;
   height: auto;
   list-style-type: none;
   background-color: var(--dark-accent);
