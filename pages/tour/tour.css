@@ -1,39 +1,83 @@
 .tour {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+
+.tour h1{
+  text-align: center;
+  font-size: 6rem;
+  margin: 25% 0 7% 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.tour h1 span {
+  font-size: 8rem;
+  color: var(--accent-color);
 }
 
 .tour h1:first-child {
-  font-size: 2.5rem;
+  font-size: 4rem;
   padding: 5%;
 }
 
-.tour .stop {
-  margin-top: 10%;
-  margin-bottom: 10%;
-}
-
-.tour ul {
+#tourUl {
   list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 150px 1fr 150px 1fr 150px 1fr;
+  text-align: center;
+  width: 95vw;
 }
 
-.tour .stop ul {
+.stop ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  list-style-type: none;
   text-align: center;
 }
 
-.tour .stop ul li:first-child {
-  color: rgb(237, 140, 246);
+.stop ul li:first-child {
+  color: var(--accent-color);
+  font-size: 2.5rem;
+}
+
+.stop ul li {
   font-size: 1.5rem;
 }
 
-.tour .stop ul li {
-  padding: 1%;
+.tour .stop ul li a img {
+  width: 150px;
 }
 
-.tour .stop ul li a img {
-  width: 100px;
+#downMirror {
+  transform: scaleX(-1);
+}
+
+#backButton {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 2rem;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+  padding: 0 15px 5px 10px;
+  border-bottom: 2px solid white;
+}
+
+#backButton img {
+  height: 2.5rem;
+  margin-left: 25%;
+}
+
+#tourFooter {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
 }

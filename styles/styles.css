@@ -19,16 +19,74 @@
   --accent-fade: rgba(237, 140, 246, 0.5)
 }
 
+/*---//---*/
+
 header {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 5px;
+  align-items: center;
 }
 
-.chloeLogo {
-  width: 50vw;
+.title {
+  text-transform: uppercase;
+  animation: blink 3s 5 linear alternate;
+  width: 100vw;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
+
+.letter {
+  font-size: 5rem;
+  background: transparent;
+  margin: 3%;
+  text-shadow: 0 0 5px var(--accent-color), 0 0 10px var(--accent-color), 0 0 20px var(--accent-color), 0 0 40px var(--accent-color), 0 0 80px var(--accent-color), 0 0 100px var(--accent-color), 0 0 120px var(--accent-color);
+}
+
+.l-1 {
+  animation: flicker 6s ease-in-out 6.4s alternate both;
+}
+
+.l-2 {
+  animation: flicker 6s ease-in-out 3.8s alternate both;
+}
+
+.l-3 {
+  animation: flicker 6s ease-in-out 2.2s alternate both;
+}
+
+.l-4 {
+  animation: flicker 6s ease-in-out 3.1s alternate both;
+}
+
+.l-5 {
+  animation: flicker 6s ease-in-out 5.5s alternate both;
+}
+
+
+@keyframes blink {
+  60%, 70%, 79% {
+    opacity: 1;
+  }
+
+  65%, 67%, 76%, 78% {
+    opacity: 0.2;
+  }
+
+  66%, 69%, 77% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes flicker {
+  0%, 2%, 35%, 37%, 39%, 41%, 100% {
+    opacity: 1;
+  }
+  1%, 3%, 34%, 36%, 38%, 40% {
+    opacity: 0;
+  }
+}
+
+/*---//---*/
 
 #socialDiv {
   position: fixed;
@@ -37,7 +95,7 @@ header {
 }
 
 #chloePhotoDiv {
-  margin-top: 5%;
+  margin-top: 15%;
 }
 
 

@@ -1,8 +1,11 @@
+#chloePhotoDiv {
+  margin-top: 3%;
+}
+
 #chloePhotoDiv main {
   display: flex;
   justify-content: center;
-}
-
-#chloePhotoDiv main img {
-  width: 85vw;
+  object-fit: cover;
+  overflow: hidden;
+  height: 500px;
 }
