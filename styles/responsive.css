@@ -24,9 +24,6 @@
     margin-top: 4%;
   }
 
-  #quotesDiv main {
-  }
-
   #quotesDiv main img {
     max-width: 25vw;
   }
@@ -43,8 +40,10 @@
     font-size: 4rem;
   }
 
-  #timer ul h2 {
+  #timer ul li h2 {
     font-size: 3rem;
+    color: black;
+    text-shadow: none;
   }
 
   #albumDiv {
@@ -60,16 +59,34 @@
   #slideshow {
     margin-bottom: 50px;
   }
+
+  #footerSocialDiv img {
+    height: 50px;
+  }
 }
 
 @media screen and (min-width: 2400px) {
 
-  #chloePhotoDiv {
-    margin-bottom: 0;
+  #quotesDiv {
+    margin-top: 0;
+    width: 50vw;
   }
 
   #quotesDiv main img {
     max-width: 15vw;
   }
+
+  #timer {
+    min-width: 50vw;
+  }
+
+  #albumDiv {
+    width: 50%;
+  }
+
+  #mainMain {
+    align-items: center;
+  }
+
 
 }

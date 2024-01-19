@@ -91,13 +91,17 @@ header {
 #socialDiv {
   position: fixed;
   z-index: 1;
-  top: 50%;
+  top: 10%;
+  left: 0;
 }
 
 #chloePhotoDiv {
   margin-top: 15%;
 }
 
+#quotesDiv {
+  margin-top: 10%;
+}
 
 #albumDiv {
   margin-top: 5%;
@@ -113,6 +117,7 @@ header {
 #mainMain {
   display: flex;
   flex-direction: column;
+
 }
 
 /*---//---*/

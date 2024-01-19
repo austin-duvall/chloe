@@ -6,6 +6,10 @@ $(document).ready(function(){
     $('#socialDiv main p').toggleClass('disappear')
   })
 
+  $('#socialDiv main p').click(function() {
+    $('#socialDiv main button').click();
+  });
+
   let prevScrollPos = $(window).scrollTop();
 
   $(window).scroll(function() {

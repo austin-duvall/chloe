@@ -6,12 +6,18 @@
 }
 
 #albumDiv main h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+  padding: 0 5% 0 5%;
+  margin: 3%;
 }
 
 #albumDiv main img {
   width: 200px;
-  padding: 5%;
+  padding: 0%;
+}
+
+#stream {
+  margin-top: 4%;
 }
 
 #streamPanel,

@@ -46,8 +46,8 @@
 }
 
 #timer ul h2 {
-  color: black;
-  stroke-linecap: white;
+  color: white;
+  text-shadow: 1px 1px var(--accent-color);
 }
 
 .btnLink-c {
@@ -85,3 +85,5 @@
   left: 0;
   transition: left .5s ease-in-out;
 }
+
+
