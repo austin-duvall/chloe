@@ -25,6 +25,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .title {
@@ -32,13 +33,12 @@ header {
   animation: blink 3s 5 linear alternate;
   width: 100vw;
   margin-top: 5%;
-  margin-bottom: 5%;
 }
 
 .letter {
-  font-size: 5rem;
+  font-size: 4.5rem;
   background: transparent;
-  margin: 3%;
+  margin: 3% 2% 3% 2%;
   text-shadow: 0 0 5px var(--accent-color), 0 0 10px var(--accent-color), 0 0 20px var(--accent-color), 0 0 40px var(--accent-color), 0 0 80px var(--accent-color), 0 0 100px var(--accent-color), 0 0 120px var(--accent-color);
 }
 
@@ -101,7 +101,11 @@ header {
 
 #albumDiv {
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 15%;
+}
+
+#merchDiv {
+  margin-bottom: 10%;
 }
 
 /*---//---*/

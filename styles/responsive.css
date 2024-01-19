@@ -1,3 +1,14 @@
+@media screen and (min-width: 768px) {
+  #stream:hover .btnLink-a {
+    background: linear-gradient(45deg, var(--accent-color), var(--dark-accent), var(--dark-accent));
+    color: var(--white-color);
+  }
+  #stream:hover .border-x-a {
+    left: 0;
+    transition: left .5s ease-in-out;
+  }
+}
+
 @media screen and (min-width: 900px) {
 
   .title {
@@ -38,15 +49,21 @@
 
   #albumDiv {
     width: 100%;
+    margin-bottom: 8%;
   }
 
   #merchDiv {
     width: 100%;
+    margin-bottom: 5%;
+  }
+
+  #slideshow {
+    margin-bottom: 50px;
   }
 }
 
 @media screen and (min-width: 2400px) {
-  
+
   #chloePhotoDiv {
     margin-bottom: 0;
   }
