@@ -1,0 +1,122 @@
+.tour {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: black;
+}
+
+.tour h1{
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 20% 0 7% 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.tour h1 span {
+  font-size: 3rem;
+  color: var(--accent-color);
+}
+
+#tourUl {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100vw;
+  overflow-wrap: break-word;
+  justify-content: center;
+}
+
+.stop ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+  width: 33vw;
+  padding: 5%;
+  margin-bottom: 15%;
+}
+
+.stop ul li:first-child {
+  color: var(--accent-color);
+  font-size: 2rem;
+}
+
+.stop ul li {
+  font-size: 1rem;
+}
+
+.tour .stop ul li a img {
+  width: 66%;
+}
+
+#downMirror {
+  transform: scaleX(-1);
+}
+
+#backButton {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+  padding: 0 15px 5px 10px;
+  border-bottom: 2px solid white;
+}
+
+#backButton img {
+  height: 1.5rem;
+  margin-left: 30%;
+  align-self: flex-end;
+}
+
+#tourFooter {
+  position: relative;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media screen and (min-width: 900px) {
+  .tour {
+    max-width: 66vw;
+  }
+
+  .tour h1 span {
+    font-size: 5rem;
+  }
+
+  #tourUl {
+    max-width: 100%;
+  }
+
+  .stop ul {
+    width: 20vw;
+  }
+
+  .stop ul li:first-child {
+    font-size: 3rem;
+  }
+
+  .stop ul li {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .tour h1 {
+    margin-top: 10%;
+  }
+
+  .tour .stop ul li a img {
+    width: 33%;
+  }
+}

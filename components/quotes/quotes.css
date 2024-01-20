@@ -1,0 +1,14 @@
+#quotesDiv main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#quotesDiv main img {
+  width: 40vw;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}

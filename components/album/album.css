@@ -1,0 +1,103 @@
+#albumDiv main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#albumDiv main h1 {
+  font-size: 3rem;
+  padding: 0 5% 0 5%;
+  margin: 3%;
+}
+
+#albumDiv main img {
+  width: 200px;
+  padding: 0%;
+}
+
+#stream {
+  margin-top: 4%;
+}
+
+#streamPanel,
+#streamPanel ul,
+#streamPanel ul li,
+#streamPanel ul li img {
+  background-color: var(--white-color);
+}
+
+#streamPanel {
+  padding: 10px;
+  display: none;
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+  width: 300px;
+  box-shadow: 2px 2px 15px 2px white;
+}
+
+#streamPanel ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  border-radius: 5px;
+}
+
+#streamPanel ul li {
+  width: 60px;
+  border-radius: 5px;
+}
+
+#streamPanel ul li img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: ce;
+}
+
+#albumCover {
+  min-width: 50%;
+
+}
+
+.btnLink-a {
+  color: black;
+  background: linear-gradient(45deg, var(--white-color),  var(--accent-color), var(--accent-color), var(--dark-accent));
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  text-decoration: none;
+}
+
+.btnContainer-a {
+  margin: 0px;
+  position: relative;
+  width: fit-content;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.border-x-a {
+  stroke: white;
+  stroke-width: 5;
+  position: absolute;
+  bottom: 0;
+  left: -100%;
+  transition: left .4s ease-in-out;
+}
+
+.btnLink-a.linkClicked {
+  background: linear-gradient(45deg, var(--accent-color), var(--dark-accent), var(--dark-accent));
+  color: var(--white-color);
+}
+
+.border-x-a.contClicked {
+  left: 0;
+  transition: left .5s ease-in-out;
+}
+
